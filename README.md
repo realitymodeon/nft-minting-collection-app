@@ -9,10 +9,10 @@ Note over Client,Wallet: RPC Validation
 Wallet-->>-Client: Response
 Note over Client,Wallet: Success or Exeption Message
 Wallet->>+Blockchain Network: 
-Blockchain Network->>-Wallet: Response
-Note over Blockchain Network,Wallet: Validate the Transaction
-Blockchain Network->>+Blockchain: 
-Blockchain->>-Blockchain Network: 
+BlockchainNetwork->>-Wallet: Response
+Note over BlockchainNetwork,Wallet: Validate the Transaction
+BlockchainNetwork->>+Blockchain: 
+Blockchain->>-BlockchainNetwork: 
 Client->>+Infura: GET
 Infura->>+IPFS: GET
 Note over Client,IPFS: Send Request and Store Images
