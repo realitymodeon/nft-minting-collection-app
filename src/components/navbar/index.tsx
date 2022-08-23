@@ -3,6 +3,9 @@ import {Link} from "react-router-dom";
 //styled
 import {Header} from "./index.styled";
 
+
+import Popup from "../popup/index"
+
 const Navbar = () => {
     return(
         <Header>
@@ -32,7 +35,7 @@ const Navbar = () => {
                             </ul>
                         </div>
                         <div className="items">
-                            
+                            <Popup show={true} title={"Connect Wallet"}></Popup>
                         </div>
                     </div>
                 </div>
