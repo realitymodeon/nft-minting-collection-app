@@ -45,13 +45,12 @@ export const Header = styled.header`
     }
     
     .nav-right .links ul li a {
-        font-family: 'Bakbak One';
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
         line-height: 22px;
         text-align: center;
         text-transform: uppercase;
-        color: #000;
+        color: white;
     }
 `
