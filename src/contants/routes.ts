@@ -3,4 +3,4 @@
  * Docs: https://reactrouter.com/web/guides/quick-start
  **********************************************************/
 
-export const HOME = '/';
+export const HOME = 'nft-minting-collection-app/';
