@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/nft-minting-collection-app/static/css/main.84487ea8.css",
-    "main.js": "/nft-minting-collection-app/static/js/main.920cf914.js",
+    "main.js": "/nft-minting-collection-app/static/js/main.4c080834.js",
     "static/js/787.14791776.chunk.js": "/nft-minting-collection-app/static/js/787.14791776.chunk.js",
     "index.html": "/nft-minting-collection-app/index.html",
     "main.84487ea8.css.map": "/nft-minting-collection-app/static/css/main.84487ea8.css.map",
-    "main.920cf914.js.map": "/nft-minting-collection-app/static/js/main.920cf914.js.map",
+    "main.4c080834.js.map": "/nft-minting-collection-app/static/js/main.4c080834.js.map",
     "787.14791776.chunk.js.map": "/nft-minting-collection-app/static/js/787.14791776.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.84487ea8.css",
-    "static/js/main.920cf914.js"
+    "static/js/main.4c080834.js"
   ]
 }
