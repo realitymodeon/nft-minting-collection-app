@@ -1,18 +1,32 @@
 import React from "react";
 import {Link} from "react-router-dom";
+
 //styled
 import {Header} from "./index.styled";
 
 
 import Popup from "../popup/index"
+type PopupButton = {
+    action:() => void;
+}
 
 const Navbar = () => {
+
+    const redirect = {
+        title:"Redirect",
+        action:() => console.log("Popup Click1")
+    }
+
+    const redirect2 = {
+        title:"Redirect2",
+        action:() => console.log("Popup Click2")
+    }
+
     return(
         <Header>
             <div className="container">
                 <div className="row">
                     <div className="nav-left">
-
                     </div>
                     <div className="nav-right">
                         <div className="links">
@@ -35,7 +49,7 @@ const Navbar = () => {
                             </ul>
                         </div>
                         <div className="items">
-                            <Popup show={true} title={"Connect Wallet"}></Popup>
+                            <Popup show={true} title={"Connect Wallet"}  buttons={[redirect, redirect2]}></Popup>
                         </div>
                     </div>
                 </div>

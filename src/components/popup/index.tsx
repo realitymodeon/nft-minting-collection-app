@@ -4,10 +4,18 @@ import React from "react";
 import {Area} from "./index.styled"
 
 import Button from "../button";
+import button from "../button";
+
+type PopupButton = {
+    title:string;
+    action:() => void;
+}
 
 type Props = {
     show: boolean;
     title?: string;
+    desc?:string;
+    buttons: PopupButton[];
 }
 
 const Popup: React.FC<Props> = (props) => {
@@ -16,9 +24,17 @@ const Popup: React.FC<Props> = (props) => {
         <Area>
             <div className="content">
                 {props.title && <h3 className="title">{props.title}</h3>}
-                <Button primary onClick={() => console.log("Popup Click")}>
-                
-                </Button>
+                {props.desc && <p className="desc">{props.desc}</p>}
+                <>
+                    {props.buttons.map((button, index) => {
+                        return(
+                            <Button primary key={index} onClick={button.action}>
+                                {button.title}
+                            </Button>
+                        )
+                    })}
+                </>
+
             </div>
         </Area>
     )
