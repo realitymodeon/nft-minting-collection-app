@@ -38,6 +38,14 @@ export const Area = styled.div`
     font-size: 3rem;
     font-weight: 600;
     margin-bottom: 1rem;
-    color: var(--white-color);
+    color: white;
   }
+`
+
+export const Background = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 `

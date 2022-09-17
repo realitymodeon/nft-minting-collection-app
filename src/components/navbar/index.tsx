@@ -1,32 +1,20 @@
-import React from "react";
+import React,{useState} from "react";
 import {Link} from "react-router-dom";
-
 //styled
 import {Header} from "./index.styled";
 
 
 import Popup from "../popup/index"
-type PopupButton = {
-    action:() => void;
-}
+import {Button} from "../button";
 
 const Navbar = () => {
-
-    const redirect = {
-        title:"Redirect",
-        action:() => console.log("Popup Click1")
-    }
-
-    const redirect2 = {
-        title:"Redirect2",
-        action:() => console.log("Popup Click2")
-    }
-
+    const [show, setShow] = useState(false);
     return(
         <Header>
             <div className="container">
                 <div className="row">
                     <div className="nav-left">
+
                     </div>
                     <div className="nav-right">
                         <div className="links">
@@ -49,7 +37,8 @@ const Navbar = () => {
                             </ul>
                         </div>
                         <div className="items">
-                            <Popup show={true} title={"Connect Wallet"}  buttons={[redirect, redirect2]}></Popup>
+                            <Button connect onClick={() => setShow(true)}>Connect</Button>
+                            <Popup show={show} title={"Select Wallet"} close={()=> setShow(false)}></Popup>
                         </div>
                     </div>
                 </div>
