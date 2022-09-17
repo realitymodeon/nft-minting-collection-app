@@ -15,6 +15,7 @@ export const Area = styled.div`
     .content {
         margin-top: 135px;
         position: relative;
+        font-family: 'Bakbak One';
     }
     
     .content .title {

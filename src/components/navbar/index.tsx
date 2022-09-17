@@ -1,12 +1,14 @@
-import React from "react";
+import React,{useState} from "react";
 import {Link} from "react-router-dom";
 //styled
 import {Header} from "./index.styled";
 
 
 import Popup from "../popup/index"
+import {Button} from "../button";
 
 const Navbar = () => {
+    const [show, setShow] = useState(false);
     return(
         <Header>
             <div className="container">
@@ -35,7 +37,8 @@ const Navbar = () => {
                             </ul>
                         </div>
                         <div className="items">
-                            <Popup show={true} title={"Connect Wallet"}></Popup>
+                            <Button connect onClick={() => setShow(true)}>Connect</Button>
+                            <Popup show={show} title={"Select Wallet"} close={()=> setShow(false)}></Popup>
                         </div>
                     </div>
                 </div>

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Header = styled.header`
+    font-family: 'Bakbak One';
     position: absolute;
     top: 0px;
     left: 0px;
