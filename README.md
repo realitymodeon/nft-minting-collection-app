@@ -1,4 +1,11 @@
 # NFT-Minting-Collection-App
+
+
+ Package                                                   | Version                                                                                                                                       | Desc                                                                      |
+|-----------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|
+| [`ethers`](packages/types)                     | [![npm](https://img.shields.io/npm/v/ethers/beta.svg)](https://www.npmjs.com/package/ethers/v/beta)                                         |Complete Ethereum library and wallet implementation in JavaScript.|
+
+
 ## Description
 ```mermaid
 sequenceDiagram
