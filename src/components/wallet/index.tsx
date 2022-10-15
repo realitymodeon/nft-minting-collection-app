@@ -1,6 +1,7 @@
 import React from "react";
 
 import Popup from "../popup";
+import { web3 } from "../../utils/web3"
 
 type Props = {
     show:boolean;
@@ -9,7 +10,13 @@ type Props = {
 
 const connect = {
     title:"Connect",
-    action:() => console.log("test")
+    action:() => updateAddress()
+}
+
+const updateAddress = async (): Promise<void> => {
+    const _address = await web3();
+
+    console.log(_address);
 }
 
 
