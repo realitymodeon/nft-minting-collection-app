@@ -3,9 +3,10 @@ import {Link} from "react-router-dom";
 //styled
 import {Header} from "./index.styled";
 
-
+import Wallet from "../wallet";
 import Popup from "../popup/index"
 import {Button} from "../button";
+import set = Reflect.set;
 
 const Navbar = () => {
     const [show, setShow] = useState(false);
@@ -38,7 +39,8 @@ const Navbar = () => {
                         </div>
                         <div className="items">
                             <Button connect onClick={() => setShow(true)}>Connect</Button>
-                            <Popup show={show} title={"Select Wallet"} close={()=> setShow(false)}></Popup>
+                            <Wallet show={show} close={() => setShow(false)}/>
+
                         </div>
                     </div>
                 </div>

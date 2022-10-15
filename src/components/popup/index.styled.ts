@@ -40,6 +40,11 @@ export const Area = styled.div`
     margin-bottom: 1rem;
     color: white;
   }
+  
+  .desc {
+    font-weight: 200;
+    color: white;
+  }
 `
 
 export const Background = styled.div`
