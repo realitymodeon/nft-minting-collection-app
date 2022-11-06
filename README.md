@@ -3,9 +3,11 @@
 
  Package                                                   | Version                                                                                                                                       | Desc                                                                      |
 |-----------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|
+| [`styled-components`](https://github.com/styled-components/styled-components)                     | [![npm](https://img.shields.io/npm/v/styled-components.svg)](https://www.npmjs.com/package/styled-components)|Use the best bits of ES6 and CSS to style your apps without stress|
 | [`ethers`](https://github.com/ethers-io/ethers.js)                     | [![npm](https://img.shields.io/npm/v/ethers/beta.svg)](https://www.npmjs.com/package/ethers/v/beta)                                         |Complete Ethereum library and wallet implementation in JavaScript.|
 | [`web3modal`](https://github.com/WalletConnect/web3modal)                     | [![npm](https://img.shields.io/npm/v/web3modal.svg)](https://www.npmjs.com/package/web3modal)                                         |A single Web3 / Ethereum provider solution for all Wallets|
 | [`popup`](https://github.com/FaruNuriSonmez/react-examples/tree/components/popup)                     | [![npm](https://img.shields.io/npm/v/react-ts-popup.svg)](https://www.npmjs.com/package/web3modal)|React popup component|
+
 
    
 
